@@ -44,6 +44,8 @@ scouts_religion = {
 		can_retire_to_monastery = no
 		priests_can_inherit = yes
 		feminist = yes #no rage about female rulers
+		allow_rivermovement = yes
+		allow_looting = yes
 
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
@@ -78,10 +80,62 @@ scouts_religion = {
 		can_retire_to_monastery = no
 		priests_can_inherit = yes
 		feminist = yes #no rage about female rulers
+		allow_rivermovement = yes
+		allow_looting = yes
 
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
 
 		female_temple_holders = yes
+	}
+}
+
+societies_religion = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	#crusade_cb = crusade
+	playable = yes
+	ai_peaceful = yes
+
+	ai_convert_same_group = 1 #Recruit if zealous.
+	ai_convert_other_group = 2 #Force conversions
+
+	male_names = {
+		Bob
+	}
+	female_names = {
+		Bob
+	}
+
+	illuminati = {
+		graphical_culture = westerngfx
+		icon = 2
+		heresy_icon = 7
+
+		color = { 0.5 0.5 0.5 }
+
+		#crusade_name = ILLUM_CRUSADE
+		scripture_name = ILLUM_SCRIPTURE
+		priest_title = ILLUM_PRIEST
+
+		priests_can_marry = yes
+		defensive_attrition = yes
+	}
+
+	freemasons = {
+		graphical_culture = westerngfx
+		icon = 2
+		heresy_icon = 7
+
+		color = { 0.8 0.4 0.4 }
+
+		#crusade_name = FREEMASON_CRUSADE
+		scripture_name = FREEMASON_SCRIPTURE
+		priest_title = FREEMASON_PRIEST
+
+		autocephaly = yes
+		can_excommunicate = yes
+		can_grant_claim = yes
+		independence_war_score_bonus = 50
 	}
 }

@@ -8,4 +8,14 @@ boy_scouts;Boy Scout;x
 boy_scouts_DESC;A boy scout.;x
 girl_scouts;Girl Scout;x
 girl_scouts_DESC;A girl scout.;x
-;;x
+societies_religion;Secret Societies;x
+illuminati;Illuminati;x
+illuminati_DESC;Illuminati.;x
+freemason;Freemason;x
+freemason_DESC;Freemason.;x
+ILLUM_CRUSADE;ILLUM_CRUSADE;x
+ILLUM_SCRIPTURE;The Unknown Tome;x
+ILLUM_PRIEST;Freethinker;x
+FREEMASON_CRUSADE;FREEMASON_CRUSADE;x
+FREEMASON_SCRIPTURE;The Teachings;x
+FREEMASON_PRIEST;Mason;x
