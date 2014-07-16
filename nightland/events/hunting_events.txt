@@ -1,0 +1,38 @@
+namespace = nvHunt
+
+# Meet a real estate agent in deer.
+character_event = {
+	id = nvHunt.1
+	desc = HUNT1INTRO
+	picture = GFX_evt_hunt
+
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+
+	trigger = {
+		has_character_modifier = holding_grand_hunt
+
+		NOT = {
+			health_traits = 1
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1 # Change post-testing
+
+		modifier = {
+			factor = 0.5
+			trait = awakened
+		}
+	}
+
+	option = {
+		name = HUNT1CONT #Follow the deer, continue event
+		#character_event = { id = nvHunt.2 }
+	}
+
+	option = {
+		name = HUNT1STOP #Avoid, end event
+	}
+}
