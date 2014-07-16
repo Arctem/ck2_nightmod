@@ -1,0 +1,11 @@
+awakened = {
+	# Increases likelihood of NV stuff.
+
+	inherit_chance = 75
+	birth = 100 #100 out of 10000 births will have this
+	cached = yes
+	customizer = yes
+	ruler_designer_cost = 2
+
+	same_opinion = 10
+}
