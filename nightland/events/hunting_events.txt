@@ -16,17 +16,6 @@ character_event = {
 		NOT = {
 			health_traits = 1
 		}
-		OR = {
-			NOT = { has_character_flag = hunt_event_happened }
-			had_character_flag = {
-				flag = hunt_event_happened
-				days = 3
-			}
-		}
-		had_character_flag = {
-			flag = hunt_begin
-			days = 3
-		}
 	}
 
 	immediate = {
