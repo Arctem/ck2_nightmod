@@ -1,11 +1,11 @@
-#CODE;ENGLISH;;;x
-HUNT1INTRO;I am out in the woods with the hunting party when I spot a shadow amidst the trees. It may be one of the most elusive and dangerous animals known to mankind - a deer.;;;x
-HUNT1CONT;I abandon the group in pursuit of the shadow.;;;x
-HUNT1STOP;I stick with the hunting party, but keep my eyes peeled for other, less vicious creatures...;;;x
-HUNT2INTRO;I sneak through the sun-dappled forest, my eyes locked on the rustling shadow ahead. It finally steps into a ray of sunlight - it is a deer, still unaware of my presence. Its eight, inky-black spider-eyes blink at different times as it munches on a bunch of grass floating a few inches from its snout. I notch my arrow and take aim.;;;x
-HUNT2CONT;I need to see if the rumors about deer and their secrets are true...;;;x
-HUNT2STOP;On second thought, it is a horrifyingly beautiful creature. I cannot murder it so heartlessly.;;;x
-HUNT3INTRO;I let loose my arrow and it buries itself deep within the deer’s throat. It collapses to the ground with a thud. I approach the deer and unsheath my knife. It’s a dirty job, but thankfully, it’s over quickly. Inside the chest cavity of the deer is a small, shaggy, bearded man wearing rags. In nervous, hushed tones he offers to sell me the deed to nearby territory.;;;x
-HUNT3CONT;;;;x
-HUNT4INTRO;My arrow hums through the air, and... a hairsbreadth past the deer. The animal bounds away into the forest, probably lost forever.;;;x
-HUNT4STOP;Now I’ll never know the truth...;;;x
+#CODE;ENGLISH;x
+HUNT1INTRO;I am out in the woods with the hunting party when I spot a shadow amidst the trees. It may be one of the most elusive and dangerous animals known to mankind - a deer.;x
+HUNT1CONT;I abandon the group in pursuit of the shadow.;x
+HUNT1STOP;I stick with the hunting party, but keep my eyes peeled for other, less vicious creatures...;x
+HUNT2INTRO;I sneak through the sun-dappled forest, my eyes locked on the rustling shadow ahead. It finally steps into a ray of sunlight - it is a deer, still unaware of my presence. Its eight, inky-black spider-eyes blink at different times as it munches on a bunch of grass floating a few inches from its snout. I notch my arrow and take aim.;x
+HUNT2CONT;I need to see if the rumors about deer and their secrets are true...;x
+HUNT2STOP;On second thought, it is a horrifyingly beautiful creature. I cannot murder it so heartlessly.;x
+HUNT3INTRO;I let loose my arrow and it buries itself deep within the deer's throat. It collapses to the ground with a thud. I approach the deer and unsheath my knife. It's a dirty job, but thankfully, it's over quickly. Inside the chest cavity of the deer is a small, shaggy, bearded man wearing rags. In nervous, hushed tones he offers to sell me the deed to nearby territory.;x
+HUNT3CONT;;x
+HUNT4INTRO;My arrow hums through the air, and... a hairsbreadth past the deer. The animal bounds away into the forest, probably lost forever.;x
+HUNT4STOP;Now I'll never know the truth...;x
