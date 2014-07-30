@@ -16,10 +16,26 @@ character_event = {
 		NOT = {
 			health_traits = 1
 		}
+		OR = {
+			NOT = { has_character_flag = hunt_event_happened }
+			had_character_flag = {
+				flag = hunt_event_happened
+				days = 3
+			}
+		}
+		had_character_flag = {
+			flag = hunt_begin
+			days = 3
+		}
+	}
+
+	immediate = {
+		set_character_flag = hunt_event_happened
 	}
 
 	mean_time_to_happen = {
-		days = 1 # Change post-testing
+		days = 1 # Change after testing.
+		#days = 200 # I have no clue how frequent this is.
 
 		modifier = {
 			factor = 0.5
@@ -29,10 +45,81 @@ character_event = {
 
 	option = {
 		name = HUNT1CONT #Follow the deer, continue event
-		#character_event = { id = nvHunt.2 }
+		character_event = { id = nvHunt.2 }
 	}
 
 	option = {
 		name = HUNT1STOP #Avoid, end event
+	}
+}
+
+#Follow real estate deer.
+character_event = {
+	id = nvHunt.2
+	desc = HUNT2INTRO
+	picture = GFX_evt_hunt
+
+	is_triggered_only = yes
+
+	option = {
+		name = HUNT2CONT #Follow the deer, continue event...again
+		random = {
+			#Catch the deer.
+			chance = 50
+			character_event = { id = nvHunt.3 }
+		}
+		random = {
+			#Fail to catch the deer.
+			chance = 50
+			character_event = { id = nvHunt.4 }
+		}
+	}
+
+	option = {
+		name = HUNT2STOP #Avoid, end event
+	}
+}
+
+#Catch the deer.
+character_event = {
+	id = nvHunt.3
+	desc = HUNT3INTRO
+	picture = GFX_evt_hunt
+
+	is_triggered_only = yes
+
+	option = {
+		name = HUNT3CONT
+		trigger = {
+			any_realm_province = {
+				any_neighbor_province = {
+					county = {
+						NOT = { claimed_by = ROOT }
+						NOT = { controlled_by = ROOT }
+					}
+
+				}
+			}
+		}
+		random_realm_province = {
+			random_neighbor_province = { 
+				county = {
+					add_claim = ROOT
+				}
+			}
+		}
+	}
+}
+
+#Fail to catch the deer.
+character_event = {
+	id = nvHunt.4
+	desc = HUNT4INTRO
+	picture = GFX_evt_hunt
+
+	is_triggered_only = yes
+
+	option = {
+		name = HUNT4STOP #Avoid, end event
 	}
 }
